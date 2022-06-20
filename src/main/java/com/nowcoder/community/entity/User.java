@@ -10,6 +10,7 @@ public class User {
     private int id;
     private String username;
     private String password;
+    private String email;
     private String salt;
     private int type;
     private int status;
@@ -23,6 +24,7 @@ public class User {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
                 ", salt='" + salt + '\'' +
                 ", type=" + type +
                 ", status=" + status +
@@ -30,6 +32,14 @@ public class User {
                 ", headerUrl='" + headerUrl + '\'' +
                 ", createTime=" + createTime +
                 '}';
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public int getId() {
